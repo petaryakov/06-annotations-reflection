@@ -29,6 +29,8 @@ public class ICNDBWrapperApiTests {
 	@BeforeEach
 	void setup() {
 
+		// warum brauchen wir hier kein GSON Objekt???
+
 		Retrofit retrofit = new Retrofit.Builder()
 			.addConverterFactory(GsonConverterFactory.create())
 			.baseUrl("http://api.icndb.com")
